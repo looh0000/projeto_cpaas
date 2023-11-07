@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CPaaS - Login. </title>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <header>
+        <img src="imgs/logo_CPaaS1.png">
+    </header>
+    <h1>Login</h1>
+    <form action="/processar_login" method="post">
+      <label for="login">Login:</label>
+      <input type="text" id="login" name="login" required><br><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" maxlength="6" required><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <form action="/cadastro_usuario" method="post">
+      <input type="submit" value="Cadastrar Novo Usuário">
+    </form>
+  </body>
+</html>

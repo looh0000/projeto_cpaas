@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css" type="text/css">
+    <link rel="stylesheet" href="css/cadastro2.css" type="text/css">
+    <title> CPaaS - Faça o cadastro. </title>
+</head>
+<body>
+    <header>
+        <img src="imgs/logo_CPaaS1.png">
+    </header>
+  <div class="form">
+    <form action="#">
+        <div class="form-header">
+            <div class="title">
+                <h1>Cadastre-se:</h1>
+                <h4><p>Já possui uma conta?<a href="login.html"> Entrar</a></h4></p>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-box">
+                <label for="name">Nome:</label>
+                <input id="name" type="text" name="name" maxlength="60" minlength="15" placeholder="Digite seu nome" required>
+                <h5> - Mínimo de 15 caracteres. </h5>
+                <h5> - Máximo de 60 caracteres. </h5>
+            </div>
+
+            <div class="input-box">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="input-box">
+                <label for="number">Telefone:</label>
+                <input id="number" type="tel" name="number" maxlength="12" placeholder=" (+55)XX-XXXXXXXX" required>
+            </div>
+
+            <div class="input-box">
+              <label for="number">Celular:</label>
+              <input id="number" type="tel" name="number" maxlength="13" placeholder=" (+55)XX-XXXXXXXX" required>
+          </div>
+
+          <div class="cep">
+            <label for="cep" class="form-label">Cep:</label>
+            <input class="form-control" name="cep" type="text" id="cep"  size="10" maxlength="9"><span id="cep-error"></span>
+        </div>
+        <div class="rua">
+            <label for="rua" class="form-label">Rua:</label>
+            <input class="form-control" name="rua" type="text" id="rua" size="60" disabled readonly>
+        </div>
+        <div class="complemento">
+            <label for="complemento" class="form-label">Complemento:</label>
+            <input class="form-control" name="complemento" type="text" id="complemento" size="60" placeholder="EX: Apt 102/fundos">
+        </div>
+        <div class="bairro">
+            <label for="bairro" class="form-label">Bairro:</label>
+            <input class="form-control" name="bairro" type="text" id="bairro" size="40" disabled readonly >
+        </div>
+        <div class="cidade">
+            <label for="cidade" class="form-label">Cidade:</label>
+            <input class="form-control" name="cidade" type="text" id="cidade" size="40" disabled readonly>
+        </div>
+        <div class="estado">
+            <label for="uf" class="form-label">Estado:</label>
+            <input class="form-control" name="uf" type="text" id="uf" size="2"disabled readonly >
+        </div>
+        <div class="cpf">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input class="form-control" name="cpf" type="text" id="cpf" size="11" maxlength="14"oninput="mascara(this)">
+          <span id="cpf-error"></span>
+        </div>
+          
+        <div class="data_nascimento">
+          <label for="data_nascimento">Data de Nascimento:</label>
+          <input type="date" id="data_nascimento" name="data_nascimento" required>
+        </div>
+
+            <div class="input-box">
+                <label for="password">Senha:</label>
+                <input id="password" type="password" name="password" maxlength="8" placeholder="Digite sua senha" required>
+                <h5> - Use de caracteres alfabéticos. </h5>
+            </div>
+
+            <div class="input-box">
+                <label for="confirmPassword">Confirme sua Senha:</label>
+                <input id="confirmPassword" type="password" name="confirmPassword" maxlength="8" placeholder="Digite sua senha novamente" required>
+            </div>
+
+        </div>
+
+        <div class="gender-inputs">
+            <div class="gender-title">
+                <h3>Gênero:</h3>
+            </div>
+
+            <div class="gender-group">
+                <div class="gender-input">
+                    <input id="female" type="radio" name="gender">
+                    <label for="female">Feminino.</label>
+                </div>
+
+                <div class="gender-input">
+                    <input id="male" type="radio" name="gender">
+                    <label for="male">Masculino.</label>
+                </div>
+
+                <div class="gender-input">
+                    <input id="others" type="radio" name="gender">
+                    <label for="others">Outros.</label>
+                </div>
+
+                <div class="gender-input">
+                    <input id="none" type="radio" name="gender">
+                    <label for="none">Prefiro não dizer.</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="continue-button">
+            <button><a href="#">Continuar</a> </button>
+        </div>
+        <script src="js/script.js"> </script>
+    </form>
+</div>
+</body>
+</html>
